@@ -1,0 +1,169 @@
+
+
+.header-10-sub {
+	display: table;
+	width: 100%;
+
+	position: relative;
+	z-index: 50;
+	height: 800px;
+	color: white;
+	text-align: center;
+	background-color: #2c3e50;
+}
+
+.header-10-sub .headers-background {
+	background-image: url("../images/header-background.jpg");
+	opacity: 0.85;
+	filter: alpha(opacity=85);
+}
+
+.headers-background {
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 1;
+	background: 50% 50% no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	opacity: 0.2;
+	filter: alpha(opacity=20);
+}
+
+.header-10-sub.v-center, .header-10-sub .v-center {
+	display: table;
+	width: 100%;
+}
+
+.header-10-sub.v-center > div, 
+.header-10-sub .v-center > div {
+	display: table-cell;
+	vertical-align: middle;
+	margin-top: 0;
+	margin-bottom: 0;
+	float: none;
+}
+
+.vh-container {
+	position: relative;
+	z-index: 2;
+}
+
+.header-10-sub .hero-unit h1 {
+	margin: 0 0 30px;
+	font-size: 45px;
+	font-weight: normal;
+	color: #ffffff;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 300;
+}
+
+.header-10-sub .hero-unit p {
+	font-size: 25px;
+	font-weight: normal;
+	color: #bdc3c7;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 300;
+	line-height: 37.5px;
+}
+
+.hero-unit h1 {
+	margin-bottom: 0;
+	font-size: 60px;
+	line-height: 1;
+	letter-spacing: -1px;
+	color: inherit;
+}
+
+.header-10-sub .control-btn {
+  width: 53px;
+  height: 53px;
+  line-height: 53px;
+  margin: 0;
+  padding: 0;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 19px;
+  font-weight: normal;
+  color: #7f8c8d;
+  color: #ffffff;
+  background: #121518;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+  position: absolute;
+  left: 50%;
+  bottom: 90px;
+  margin-left: -26.5px;
+}
+.header-10-sub .control-btn:hover,
+.header-10-sub .control-btn:focus,
+.header-10-sub .control-btn.active {
+  color: #ffffff;
+}
+.header-10-sub .control-btn:hover,
+.header-10-sub .control-btn:focus,
+.header-10-sub .control-btn:active,
+.header-10-sub .control-btn.active {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+@media (max-width: 480px) {
+  .header-10-sub .control-btn {
+    bottom: 30px;
+  }
+}
+
+.white {
+    color: white;
+}
+
+section * {
+	z-index: 2;
+}
+
+
+.content-7, .content-8 {
+	padding-top: 200px;
+	padding-bottom: 200px;
+}
+
+
+.content-23.v-center, .content-23 .v-center {
+display: table;
+width: 100%;
+}
+.content-23 {
+overflow: hidden;
+background-color: #1B1F23;
+}
+
+.content-23 {
+	position: relative;
+	height: 800px;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	color: white;
+}
+
+.content-23.custom-bg {
+	background-image: url('../images/Italy_001.png');
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.custom-bg {
+
+}
+/*
+-----------------------------------
+	FONT Startup-Icons
+-----------------------------------
+*/
+

@@ -1,0 +1,53 @@
+body {
+	background-color:  #eeeeee;
+	text-align: center;
+}
+
+.services {
+	background-color: #FFFFFF;
+	padding-bottom: 50px;
+}
+
+.slider {
+	width: 960px;
+	height: 330px;
+	overflow: scroll;
+}
+
+.slider .lists {
+	width: 10000px;
+	/*margin-left: -500px; //slide animation for per slide*/
+}
+
+.slider .slide-box {
+	float: left;
+	/*border: 1px solid #e5e5e5;*/
+}
+
+.slide-box .slide-container {
+	width:300px;
+	padding: 40px;
+}
+
+.slider-container {
+	position: relative;
+}
+
+#slider-nav span {
+	width: 25px;
+	height: 38px;
+	background: transparent url('../images/arrows.png') no-repeat top left;
+	position: absolute;
+	top:50%;
+	margin-top: -19px;
+	left: -1px;
+	text-indent: -9000px;
+	z-index: 100;
+	cursor: pointer;
+}
+
+#slider-nav span.next {
+	background-position: top right;
+	left: auto;
+	right: -1px;
+}

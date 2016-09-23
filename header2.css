@@ -1,0 +1,162 @@
+html, body{
+    height: 100%;
+}
+
+/* 
+Basic Styles */
+
+
+/* .logo-message {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+}
+.logo {
+    font-size: 50px;
+    color: #222222;
+}
+.logo-message-p {
+    margin: 20px 0;
+    font-size: 34px;
+}
+.callus-btn {
+    margin: 20px 0;
+    background-color: transparent;
+    border: 1px solid;
+    font-size: 16px;
+    padding: 10px 30px;
+    border-radius: 0;
+}
+.callus-btn:hover {
+    background-color: #FFF;
+    border: 1px solid none;
+} */
+
+
+
+/*
+PARALLEX STYLING */
+
+.bullets {
+    position: fixed;
+    z-index: 1;
+    top: 50%;
+    right: 50px;
+}
+
+.bullets li {
+    position: relative;
+    display: block;
+    margin: 26px 0;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.bullets .active {
+    margin: 16px 0;
+}
+
+.dotstyle-tooltip li {
+    
+    border-radius: 50%;
+   /* border: 2px solid #FFF;*/
+
+    background-color: #FFF;
+    background-color: rgba(255, 255, 255, 0.3);
+
+    background-color: transparent;
+    box-shadow: inset 0 0 0 2px white;
+    -webkit-transition: box-shadow 0.3s ease;
+    transition: box-shadow 0.3s ease;
+}
+
+.bullets .active {
+    box-shadow: inset 0 0 0 8px white; 
+    /*//box-shadow - inset(show outer to inner) h-shadow v-shadow, blur distance, spread distance*/
+}
+
+.dotstyle-tooltip li:hover {
+    z-index: 100;
+}
+
+.dotstyle-tooltip li:hover a {
+    opacity: 1;
+    -webkit-transform: translateX(50%) translateY(0%);
+    transform: translateX(50%) translateY(0%);
+    -webkit-transition: -webkit-transform 0.3s ease-in, opacity 0.3s ease;
+    transition: transform 0.3s ease-in, opacity 0.3s ease;
+}
+
+.bullets li a {
+    cursor: pointer;
+    position: absolute;
+}
+
+.dotstyle-tooltip li a {
+    display: block;
+  /* height: auto;
+    width: 100%;*/
+    margin-top: -8px;
+    padding: 2px 6px;
+    right:400%;
+    background-color: #c44d48;
+    text-indent: 0;
+    line-height: 2;
+    white-space: nowrap;
+    text-decoration: none;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    opacity: 0;
+}
+
+.dotstyle-tooltip li a::after {
+    position: absolute;
+    border: solid transparent;
+    border-width: 10px;
+    border-left-color: #c44d48;
+    left: 99%;
+    bottom: 50%;
+    margin-bottom: -10px;
+    content: '';
+}
+
+
+/*
+SLIDE */
+.slide {
+    background-attachment: fixed;
+    width:100%;
+    height:100%;
+    position: relative;
+}
+.logo-text {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 45%;
+}
+.logo-text a {
+    font-size: 30px;
+}
+
+#slide1 {
+    background-image: url('../images/header-background.jpg');
+    background-size: cover;
+}
+#slide2 {
+    background-image: url('../images/Italy_001.png');
+    background-size: cover;
+}
+#slide3 {
+    background-image: url('../images/header-background.jpg');
+    background-size: cover;
+}
+#slide4 {
+    background-image: url('../images/Italy_001.png');
+    background-size: cover;
+}
+/* hambleberg bar */

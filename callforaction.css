@@ -1,0 +1,37 @@
+body {
+	background-color:  #eeeeee;
+	text-align: center;
+}
+
+.callforaction {
+	background-color: #FFFFFF;
+	padding-top: 20px;
+	padding-bottom: 50px;
+}
+.call-email-input {
+	width: 350px;
+}
+
+.callforaction2 {
+	background-color: #565d67;
+	color: #FFFFFF;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.subcribe-btn {
+	background-color: #EC5D74;
+	color: #FFF;
+	padding: 10px 40px;
+}
+
+.callforaction-list {
+	list-style: none;
+}
+.callforaction-list span {
+	font-size: 21px;
+
+}
+.callforaction-list li {
+	display: inline-block;
+}
