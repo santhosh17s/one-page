@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Testimonial | Single Page Site</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- Mobile Specific Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="css/styles.css" />
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600,300italic,600italic' rel='stylesheet'>
+	<link href='http://fonts.googleapis.com/css?family=Bitter:400,700' rel='stylesheet'>
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<style>
+		body {
+			background-color: #cccccc;
+		}
+		.row {
+			background-color: #FFFFFF;
+		}
+		.stats {
+			padding: 30px 0;
+		}
+		.testimonial {
+			padding: 45px 0;
+			background-color: #FFFFFF;
+			height: 200px;
+		}
+		.carousel-indicators li{
+			border: 1px solid #ccc;
+
+		}
+		.carousel-indicators .active {
+			background-color: #ff6600;
+		}
+
+		.test-icon-box {
+			float: left;
+			display: inline-block;
+			width: 25%;
+
+		}
+		.test-icon {
+			font-size: 60px;
+		}
+
+		.test-note {
+			float: left;
+			display: block;
+			width: 75%;
+		}
+
+	</style>
+
+	<section>
+		<div class="container">
+			<div class="row text-center stats">
+				<div class="col-md-8 col-md-offset-2">
+					<h2>Testimonials</h2>
+				</div>
+			</div> <!-- row -->
+
+			<div id="myCarouselTeam" class="carousel slide testimonial" data-ride="carousel">
+				<ol class="carousel-indicators">
+			        <li data-target="#myCarouselTeam" data-slide-to="0" class="active"></li>
+			        <li data-target="#myCarouselTeam" data-slide-to="1"></li>
+			        <li data-target="#myCarouselTeam" data-slide-to="2"></li>
+			        <li data-target="#myCarouselTeam" data-slide-to="2"></li>
+      	        </ol>
+				<div class="carousel-inner">
+						<div class="item active">
+							<div class="row text-center">
+								<div class="col-md-8 col-md-offset-2">
+									<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem repellat nemo aspernatur ad possimus.
+									<br><span class="small">CEO / Marketing Guru</span>
+									</h4>
+								</div>
+							</div> <!-- row -->
+						</div>	<!-- item -->
+						<div class="item">
+							<div class="row text-center">
+								<div class="col-md-8 col-md-offset-2">
+									<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem repellat nemo aspernatur ad possimus.
+									<br><span class="small">CEO / Marketing Guru</span></h4>
+								</div>
+							</div> <!-- row -->
+						</div>
+						<div class="item">
+							<div class="row text-center">
+								<div class="col-md-8 col-md-offset-2">
+									<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem repellat nemo aspernatur ad possimus.
+									<br><span class="small">CEO / Marketing Guru</span></h4>
+								</div>
+							</div> <!-- row -->
+						</div>
+						<div class="item">
+							<div class="row text-center">
+								<div class="col-md-8 col-md-offset-2">
+									<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem repellat nemo aspernatur ad possimus.
+									<br><span class="small">CEO / Marketing Guru</span></h4>
+								</div>
+							</div> <!-- row -->
+						</div>
+				</div>	<!-- carousel inner -->
+			</div> <!-- mycarousel -->
+
+
+			<div class="row text-center stats">
+				<div class="col-md-8 col-md-offset-2">
+					<h3>OUR CLIENTS LOVE US</h3>
+				</div>
+			</div> <!-- row -->
+			<div class="row stats">
+				<div class="col-md-4 col-md-offset-2">
+					<div class="test-icon-box">
+						<span class="glyphicon glyphicon glyphicon-send test-icon"></span>
+					</div>
+					<div class="test-note">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+						</p>
+						<h4>JAI<br><span class="small">CEO/Manager</span></h4>
+					</div>
+				</div>
+				<div class="col-md-4 col-md-offset-1">
+						<div class="test-icon-box">
+							<span class="glyphicon glyphicon glyphicon-send test-icon"></span>
+						</div>
+						<div class="test-note">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+							</p>
+							<h4>JAI KUMAR <br><span class="small">CEO/Manager</span></h4>
+						</div>
+				</div>
+			</div> <!-- row -->
+
+		</div>	<!-- container -->
+	</section>
+
+	<script src="js/jquery-2.0.3.js"></script>
+	<script src="js/transition.js"></script>
+	<script src="js/carousel.js"></script>
+</body>
+</html>

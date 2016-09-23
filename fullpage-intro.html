@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Full Page Intro & Navigation</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- Mobile Specific Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="css/fullpageintro.css" />
+
+	<!-- <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600,300italic,600italic' rel='stylesheet'>
+	<link href='http://fonts.googleapis.com/css?family=Bitter:400,700' rel='stylesheet'>
+ -->
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+
+	<!-- http://codepen.io/codyhouse/pen/jqomk -->
+
+
+	<main id="cd-main-content">
+		<section id="cd-intro">
+			<h1>Full Page Intro &amp; Navigation</h1>
+
+			<header class="cd-header">
+				<div id="cd-logo"><a href="#0"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/cd-logo_2.svg" alt="Logo"></a></div>
+				<a class="cd-menu-trigger" href="#main-nav">Menu<span></span></a>
+			</header>
+
+			<div class="cd-blurred-bg"></div>
+
+		</section> <!-- cd-intro -->
+	</main>
+
+	<div class="cd-shadow-layer"></div>
+
+	<nav id="main-nav">
+		<ul>
+			<li><a href="#0"><span>Tour</span></a></li>
+			<li><a href="#0"><span>Pricing</span></a></li>
+			<li><a href="#0"><span>Labs</span></a></li>
+			<li><a href="#0"><span>About</span></a></li>
+			<li><a href="#0"><span>Contact us</span></a></li>
+		</ul>
+		<a href="#0" class="cd-close-menu">Close<span></span></a>
+	</nav>
+
+
+	<script src="js/jquery-1.11.0.js"></script>
+	<script>
+
+		jQuery(document).ready(function($){
+
+			//open menu
+			$('.cd-menu-trigger').on('click', function(event){
+				event.preventDefault();
+				$('#cd-main-content').addClass('move-out');
+				$('#main-nav').addClass('is-visible');
+				$('.cd-shadow-layer').addClass('is-visible');
+			});
+
+			//close menu
+			$('.cd-close-menu').on('click', function(event){
+				event.preventDefault();
+				$('#cd-main-content').removeClass('move-out');
+				$('#main-nav').removeClass('is-visible');
+				$('.cd-shadow-layer').removeClass('is-visible');
+			});
+
+			//clipped image - blur effect
+			set_clip_property();
+			$(window).on('resize', function(){
+				set_clip_property();
+			});
+
+			function set_clip_property() {
+				var $header_height = $('.cd-header').height(),
+					$window_height = $(window).height(),
+					$header_top = $window_height - $header_height,
+					$window_width = $(window).width();
+				$('.cd-blurred-bg').css('clip', 'rect('+$header_top+'px, '+$window_width+'px, '+$window_height+'px, 0px)');
+			}
+		});
+
+	</script>
+</body>
+</html>

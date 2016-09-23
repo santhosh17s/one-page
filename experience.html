@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Experience | Single Page</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- Mobile Specific Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="css/styles.css" />
+	<!-- <link rel="stylesheet" href="css/skill-bar.css"> -->
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600,300italic,600italic' rel='stylesheet'>
+	<link href='http://fonts.googleapis.com/css?family=Bitter:400,700' rel='stylesheet'>
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+
+	<!-- === SKILLS Circle Pie Chart === -->
+
+	<style>
+		.chart {
+		  position: relative;
+		  display: inline-block;
+		  width: 180px;
+		  height: 180px;
+		  margin-top: 50px;
+		  margin-bottom: 10px;
+		  text-align: center;
+		}
+		.chart canvas {
+		  position: absolute;
+		  top: 0;
+		  left: 0;
+		}
+		.percent {
+		  display: inline-block;
+		  line-height: 180px;
+		  z-index: 2;
+		  font-size: 23px;
+		}
+		.percent:after {
+		  content: '%';
+		  margin-left: 0.1em;
+		  font-size: 23px;
+		}
+	</style>
+	<section>
+		<div class="container">
+			<div class="row text-center">
+				<div class="col-md-8 col-md-offset-2">
+					<h2><strong>WE GOT SKILLS!</strong></h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, alias maxime ab porro quaerat voluptates? Accusantium, iste, nostrum ipsa laudantium eligendi!</p>
+				</div>
+			</div> <!-- row -->
+			<br><br>
+
+			<div class="row text-center">
+				<div class="col-md-3">
+					<div class="chart" data-percent="80"><span class="percent"></span></div>
+					<h4><strong>WEB DESIGN</strong></h4>
+				</div>
+				<div class="col-md-3">
+					<div class="chart" data-percent="35"><span class="percent"></span></div>
+					<h4><strong>GRAPHIC DESIGN</strong></h4>
+				</div>
+				<div class="col-md-3">
+					<div class="chart" data-percent="90"><span class="percent"></span></div>
+					<h4><strong>HTML/CSS</strong></h4>
+				</div>
+				<div class="col-md-3">
+					<div class="chart" data-percent="80"><span class="percent"></span></div>
+					<h4><strong>WORDPRESS</strong></h4>
+				</div>
+			</div>
+		</div> <!-- container -->
+	</section>
+
+	<script src="js/jquery-2.0.3.js"></script>
+	<script src="js/jquery.easypiechart.js"></script>
+	<script>
+	    $(function() {
+	        $('.chart').easyPieChart({
+	            //your options goes here
+	            trackColor: '#eeeeee',
+	            barColor : '#4F75D6',
+	            lineWidth: 15,
+	            size : 180,
+	            onStep: function(from, to, percent) {
+					$(this.el).find('.percent').text(Math.round(percent));
+				}
+	        });
+	    });
+	</script>
+
+	<br><hr><br>
+	<!-- === SKILLS - Bar Chart === -->
+	<style>
+
+	body { background: #E9E5E2 ; }
+
+	.skill-bar {
+		width: 100%;
+		height: 20px;
+		background-color: #eeeeee;
+	}
+	.web-design {
+		width:85%;
+		height: 20px;
+		-moz-animation: web-design 2s ease-out;
+		-webkit-animation: web-design 2s ease-out;
+		background-color: #4F75D6;
+	}
+
+	.graphic-design {
+		width:40%;
+		height: 20px;
+		-moz-animation: graphic-design 2s ease-out;
+		-webkit-animation: graphic-design 2s ease-out;
+		background-color: #4F75D6;
+	}
+
+	.html-design {
+		width:95%;
+		height: 20px;
+		-moz-animation: html-design 2s ease-out;
+		-webkit-animation: html-design 2s ease-out;
+		background-color: #4F75D6;
+	}
+
+	.ui-design {
+		width:70%;
+		height: 20px;
+		-moz-animation: ui-design 2s ease-out;
+		-webkit-animation: ui-design 2s ease-out;
+		background-color: #4F75D6;
+	}
+
+	@-webkit-keyframes web-design {
+		0%  { width:0px;}
+		100%{ width:85%;}
+	}
+
+	@-webkit-keyframes graphic-design {
+		0%  { width:0px;}
+		100%{ width:40%;}
+	}
+
+	@-webkit-keyframes html-design {
+		0%  { width:0px;}
+		100%{ width:95%;}
+	}
+	@-webkit-keyframes ui-design {
+		0%  { width:0px;}
+		100%{ width:70%;}
+	}
+
+	</style>
+	<section>
+		<div class="container">
+			<div class="row text-center">
+				<div class="col-md-8 col-md-offset-2">
+					<h2><strong>WE GOT SKILLS!</strong></h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, alias maxime ab porro quaerat voluptates? Accusantium, iste, nostrum ipsa laudantium eligendi!</p>
+				</div>
+			</div> <!-- row -->
+			<br><br>
+
+			<div class="row">
+				<div class="col-md-4 col-md-offset-2">
+					<h4><strong>WEB DESIGN</strong></h4>
+					<div class="skill-bar">
+						<div class="web-design"></div>
+					</div>
+				</div>
+				<div class="col-md-4 col-md-offset-2">
+					<h4><strong>GRAPHIC DESIGN</strong></h4>
+					<div class="skill-bar">
+						<div class="graphic-design"></div>
+					</div>
+				</div>
+			</div>
+
+			<br><br>
+
+			<div class="row">
+				<div class="col-md-4 col-md-offset-2">
+					<h4><strong>HTML / CSS</strong></h4>
+					<div class="skill-bar">
+						<div class="html-design"></div>
+					</div>
+				</div>
+				<div class="col-md-4 col-md-offset-2">
+					<h4><strong>UI / UX </strong></h4>
+					<div class="skill-bar">
+						<div class="ui-design"></div>
+					</div>
+				</div>
+			</div>
+		</div> <!-- container -->
+	</section>
+
+	<hr>
+
+	<!-- http://cssdeck.com/labs/animated-skills-bars -->
+	<!--
+	<section>
+		<div class="container">
+			<ul id="skill">
+				<li><span class="bar graphic-design"></span><h3>Graphic Design</h3></li>
+				<li><span class="bar html-css"></span><h3>Html // Css</h3></li>
+				<li><span class="bar jquery"></span><h3>jQuery // MoTools</h3></li>
+				<li><span class="bar wordpress"></span><h3>Wordpress</h3></li>
+			</ul>
+		</div>
+	</section> -->
+
+</body>
+</html>

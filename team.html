@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Team | Signle Page</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- Mobile Specific Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="css/styles.css" />
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600,300italic,600italic' rel='stylesheet'>
+	<link href='http://fonts.googleapis.com/css?family=Bitter:400,700' rel='stylesheet'>
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+
+	<style>
+	.team-carousel {
+		background-color: #FFF;
+	}
+
+	.carousel-control.left {
+		background-image: none;
+	}
+
+	.carousel-control.right {
+		background-image: none;
+	}
+
+	.carousel-control .icon-prev,
+	.carousel-control .glyphicon-chevron-left {
+		left: 0%;
+		color: #4B4B4B;
+	}
+
+	.carousel-control .icon-prev,
+	.carousel-control .glyphicon-chevron-right {
+		right: 0%;
+		color: #4B4B4B;
+	}
+
+
+	.teamHover:hover .teamMember {
+		opacity: 1;
+	}
+
+	.teamMember {
+		opacity: 0;
+		position: absolute;
+		background-color: #eeeeee;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		text-align: center;
+	}
+	.teamMember h4 {
+		position: absolute;
+		top: 40%;
+		left: 25%;
+	}
+
+	.teams {
+		height: auto;
+	}
+
+	.teamIndi {
+		top:110%;
+	}
+	.teamIndi .active {
+		background-color: #FF7A00;
+	}
+
+	.teamIndi li {
+		border: 1px solid #7A7A7A;
+	}
+
+
+	</style>
+
+<!-- 	<h1>TEAM | SINGLE PAGE</h1> -->
+
+	<section>
+		<div class="container">
+			<div class="row text-center">
+				<div class="col-md-8 col-md-offset-2">
+				<h2>OUR TEAM</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, alias maxime ab porro quaerat voluptates? Accusantium, iste, nostrum ipsa laudantium eligendi!</p>
+				</div>
+			</div> <!-- row -->
+			<br><br>
+			<div id="myCarousel" class="carousel slide team-carousel" data-ride="carousel">
+				<div class="carousel-inner">
+						<div class="item active">
+							<div class="row text-center">
+								<div class="col-md-4">
+									<img src="images/user-icon.png" alt="BRANDING" class="img-circle">
+									<h4><strong>Santhosh Kumar</strong>
+										<br><span class="small">CEO / Marketing Guru</span></h4>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, delectus.</p>
+								</div>
+								<div class="col-md-4">
+									<img src="images/user-icon.png" alt="BRANDING" class="img-circle">
+									<h4><strong>Santhosh S</strong>
+										<br><span class="small">CEO / Marketing Guru</span></h4>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, delectus.</p>
+								</div>
+								<div class="col-md-4">
+									<img src="images/user-icon.png" alt="BRANDING" class="img-circle">
+									<h4><strong>Web Develop</strong>
+										<br><span class="small">CEO / Marketing Guru</span>
+									</h4>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, delectus.</p>
+								</div>
+							</div> <!-- row -->
+						</div>	<!-- item -->
+
+						<div class="item">
+							<div class="row text-center">
+								<div class="col-md-4">
+									<img src="images/user-icon.png" alt="BRANDING" class="img-circle">
+									<h3><strong>JAYA Kumar</strong>
+										<br><span class="small">CEO / Marketing Guru</span></h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, delectus.</p>
+								</div>
+								<div class="col-md-4">
+									<img src="images/user-icon.png" alt="BRANDING" class="img-circle">
+									<h3><strong>JAI</strong>
+										<br><span class="small">CEO / Marketing Guru</span></h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, delectus.</p>
+								</div>
+							</div> <!-- row -->
+						</div>
+				</div>	<!-- carousel inner -->
+				<a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+      			<a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+
+			</div> <!-- mycarousel -->
+		</div>
+	</section>
+
+	<hr>
+
+	<section>
+		<div class="container">
+			<div class="row text-center">
+				<div class="col-md-8 col-md-offset-2">
+				<h2>OUR TEAM</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, alias maxime ab porro quaerat voluptates? Accusantium, iste, nostrum ipsa laudantium eligendi!</p>
+				</div>
+			</div> <!-- row -->
+			<br><br>
+			<div id="myCarouselTeam" class="carousel slide team-carousel teams" data-ride="carousel">
+				<ol class="carousel-indicators teamIndi">
+			        <li data-target="#myCarouselTeam" data-slide-to="0" class="active"></li>
+			        <li data-target="#myCarouselTeam" data-slide-to="1"></li>
+      	        </ol>
+				<div class="carousel-inner">
+						<div class="item active">
+							<div class="text-center">
+								<div class="col-md-4 teamHover">
+									<img src="images/user-icon.png" alt="BRANDING">
+									<div class="teamMember">
+										<h4><strong>Santhosh S</strong>
+										<br><span class="small">CEO / Marketing Guru</span></h4>
+									</div>
+								</div>
+								<div class="col-md-4 teamHover">
+									<img src="images/user-icon.png" alt="BRANDING">
+									<div class="teamMember">
+										<h4><strong>Santhosh Kumar</strong>
+										<br><span class="small">CEO / Marketing Guru</span></h4>
+									</div>
+								</div>
+								<div class="col-md-4 teamHover">
+									<img src="images/user-icon.png" alt="BRANDING">
+									<div class="teamMember">
+										<h4><strong>Web Develop</strong>
+											<br><span class="small">CEO / Marketing Guru</span>
+										</h4>
+									</div>
+								</div>
+							</div> <!-- row -->
+						</div>	<!-- item -->
+
+
+						<div class="item">
+							<div class="text-center">
+								<div class="col-md-4 teamHover">
+									<img src="images/user-icon.png" alt="BRANDING">
+									<div class="teamMember">
+										<h4><strong>JAYA KUMAR</strong>
+										<br><span class="small">CEO / Marketing Guru</span></h4>
+									</div>
+								</div>
+								<div class="col-md-4 teamHover">
+									<img src="images/user-icon.png" alt="BRANDING">
+									<div class="teamMember">
+										<h4><strong>JAI</strong>
+										<br><span class="small">CEO / Marketing Guru</span></h4>
+									</div>
+								</div>
+							</div> <!-- row -->
+						</div>
+				</div>	<!-- carousel inner -->
+				<a class="left carousel-control" href="#myCarouselTeam" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+      			<a class="right carousel-control" href="#myCarouselTeam" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+
+			</div> <!-- mycarousel -->
+
+		</div>
+	</section>
+
+	<script src="js/jquery-2.0.3.js"></script>
+	<script src="js/transition.js"></script>
+	<script src="js/carousel.js"></script>
+
+	<script>
+
+
+
+	</script>
+
+</body>
+</html>
